@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Mid-Term Exam Project | Taha Khan
+  </title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background: #f5f3ee;
+
+      color: #151718;
+
+    }
+
+
+    .app {
+
+      min-height: 100vh;
+
+      display: grid;
+
+      grid-template-columns: 230px 1fr;
+
+    }
+
+
+    .side {
+
+      background: #151a1d;
+
+      color: white;
+
+      padding: 28px;
+
+    }
+
+
+    .logo {
+
+      font-weight: 800;
+
+      font-size: 22px;
+
+      margin-bottom: 60px;
+
+    }
+
+
+    .logo span {
+
+      color: #ffb400;
+
+    }
+
+
+    .side a {
+
+      display: block;
+
+      color: #aaa;
+
+      text-decoration: none;
+
+      padding: 12px 0;
+
+    }
+
+
+    .side a:hover,
+    .side a.active {
+
+      color: #ffb400;
+
+    }
+
+
+    .main {
+
+      padding: 40px;
+
+      max-width: 1200px;
+
+      width: 100%;
+
+      margin: auto;
+
+    }
+
+
+    .top {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+
+    }
+
+
+    .top h1 {
+
+      font-size: 38px;
+
+      margin: 0;
+
+    }
+
+
+    .date {
+
+      color: #777;
+
+    }
+
+
+    .welcome {
+
+      margin: 35px 0;
+
+      background: #151a1d;
+
+      color: white;
+
+      padding: 30px;
+
+      border-radius: 18px;
+
+    }
+
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 18px;
+
+    }
+
+
+    .card {
+
+      background: white;
+
+      padding: 22px;
+
+      border: 1px solid #ddd;
+
+      border-radius: 16px;
+
+    }
+
+
+    .card strong {
+
+      font-size: 30px;
+
+    }
+
+
+    .progress {
+
+      height: 8px;
+
+      background: #ddd;
+
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      margin-top: 18px;
+
+    }
+
+
+    .progress i {
+
+      display: block;
+
+      height: 100%;
+
+      width: 74%;
+
+      background: #ffb400;
+
+    }
+
+
+    .schedule {
+
+      margin-top: 18px;
+
+    }
+
+
+    .schedule div {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      padding: 14px 0;
+
+      border-bottom: 1px solid #eee;
+
+    }
+
+
+    .back {
+
+      display: inline-block;
+
+      margin-top: 30px;
+
+      color: #151718;
+
+      font-weight: 700;
+
+      text-decoration: none;
+
+    }
+
+
+    @media (max-width: 750px) {
+
+      .app {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .side {
+
+        display: none;
+
+      }
+
+
+      .main {
+
+        padding: 25px;
+
+      }
+
+
+      .grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .top h1 {
+
+        font-size: 28px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <div class="app">
+
+
+    <aside class="side">
+
+      <div class="logo">
+
+        <span>TK</span>
+        Student Portal
+
+      </div>
+
+
+      <a
+        class="active"
+        href="#">
+        Dashboard
+      </a>
+
+      <a href="#courses">
+        Courses
+      </a>
+
+      <a href="#schedule">
+        Schedule
+      </a>
+
+      <a href="#progress">
+        Progress
+      </a>
+
+      <a href="index.html">
+        Portfolio
+      </a>
+
+    </aside>
+
+
+    <main class="main">
+
+
+      <div class="top">
+
+        <div>
+
+          <div
+            style="
+            color:#ff9f00;
+            font-size:12px;
+            font-weight:bold;
+            ">
+
+            MID-TERM EXAM PROJECT
+
+          </div>
+
+          <h1>
+            Student Dashboard
+          </h1>
+
+        </div>
+
+
+        <div class="date">
+          2026 / 08
+        </div>
+
+      </div>
+
+
+      <section class="welcome">
+
+        <h2>
+          Welcome back 👋
+        </h2>
+
+        <p>
+          Track your courses, schedule
+          and learning progress from
+          one simple interface.
+        </p>
+
+      </section>
+
+
+      <div class="grid" id="courses">
+
+
+        <div class="card">
+
+          <small>
+            ACTIVE COURSES
+          </small>
+
+          <br>
+
+          <strong>
+            06
+          </strong>
+
+          <p>
+            Courses in progress
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <small>
+            ASSIGNMENTS
+          </small>
+
+          <br>
+
+          <strong>
+            12
+          </strong>
+
+          <p>
+            Completed this month
+          </p>
+
+        </div>
+
+
+        <div
+          class="card"
+          id="progress">
+
+          <small>
+            OVERALL PROGRESS
+          </small>
+
+          <br>
+
+          <strong>
+            74%
+          </strong>
+
+          <div class="progress">
+            <i></i>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="card schedule"
+        id="schedule">
+
+        <h2>
+          Today's Schedule
+        </h2>
+
+
+        <div>
+          <span>
+            Web Development
+          </span>
+
+          <b>
+            09:00 AM
+          </b>
+        </div>
+
+
+        <div>
+          <span>
+            UI/UX Design
+          </span>
+
+          <b>
+            11:30 AM
+          </b>
+        </div>
+
+
+        <div>
+          <span>
+            JavaScript Practice
+          </span>
+
+          <b>
+            02:00 PM
+          </b>
+        </div>
+
+
+        <div>
+          <span>
+            Project Review
+          </span>
+
+          <b>
+            04:00 PM
+          </b>
+        </div>
+
+      </div>
+
+
+      <a
+        class="back"
+        href="index.html">
+
+        ← Back to Taha Khan Portfolio
+
+      </a>
+
+
+    </main>
+
+  </div>
+
+
+</body>
+</html>
